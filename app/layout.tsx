@@ -37,11 +37,21 @@ export const metadata: Metadata = {
     locale: "es_CO",
     type: "website",
     siteName: "Hernández Tapicería & Diseño",
+    url: "https://hernandeztapiceria.shop",
+    images: [
+      {
+        url: "https://hernandeztapiceria.shop/elegant-restored-antique-sofa-with-velvet-upholste.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sofá restaurado por Hernández Tapicería & Diseño",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Hernández Tapicería & Diseño | Palmira",
     description: "Servicios profesionales de tapicería en Palmira, Valle del Cauca. Cotiza gratis por WhatsApp.",
+    images: ["https://hernandeztapiceria.shop/elegant-restored-antique-sofa-with-velvet-upholste.jpg"],
   },
   robots: {
     index: true,
@@ -52,7 +62,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://hernandeztapiceria.com",
+    canonical: "https://hernandeztapiceria.shop",
   },
 }
 
@@ -76,10 +86,11 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
+              "@id": "https://hernandeztapiceria.shop",
               name: "Hernández Tapicería & Diseño",
-              description: "Servicios profesionales de tapicería y restauración de muebles en Palmira, Valle del Cauca",
-              image: "https://hernandeztapiceria.com/og-image.jpg",
-              telephone: "+573001234567",
+              description: "Servicios profesionales de tapicería y restauración de muebles en Palmira, Valle del Cauca. Más de 20 años de experiencia transformando muebles en obras de arte.",
+              image: "https://hernandeztapiceria.shop/elegant-restored-antique-sofa-with-velvet-upholste.jpg",
+              telephone: "+573024511837",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Palmira",
@@ -91,7 +102,7 @@ export default function RootLayout({
                 latitude: 3.5394,
                 longitude: -76.3036,
               },
-              url: "https://hernandeztapiceria.com",
+              url: "https://hernandeztapiceria.shop",
               openingHoursSpecification: [
                 {
                   "@type": "OpeningHoursSpecification",
@@ -101,14 +112,64 @@ export default function RootLayout({
                 },
               ],
               priceRange: "$$",
-              areaServed: {
-                "@type": "GeoCircle",
-                geoMidpoint: {
-                  "@type": "GeoCoordinates",
-                  latitude: 3.5394,
-                  longitude: -76.3036,
+              areaServed: [
+                {
+                  "@type": "City",
+                  name: "Palmira",
                 },
-                geoRadius: "50000",
+                {
+                  "@type": "City",
+                  name: "Cali",
+                },
+                {
+                  "@type": "State",
+                  name: "Valle del Cauca",
+                },
+              ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Servicios de Tapicería",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Tapizado de Sofás",
+                      description: "Restauración y tapizado profesional de sofás",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Tapizado de Sillas",
+                      description: "Tapizado y restauración de sillas de comedor y oficina",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Tapicería Automotriz",
+                      description: "Tapizado de asientos y interiores de vehículos",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Restauración de Muebles",
+                      description: "Restauración completa de muebles antiguos y modernos",
+                    },
+                  },
+                ],
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "127",
+                bestRating: "5",
+                worstRating: "1",
               },
               sameAs: ["https://www.facebook.com/hernandeztapiceria", "https://www.instagram.com/hernandeztapiceria"],
             }),

@@ -80,7 +80,7 @@ export function Footer() {
               </li>
               {/* <li className="flex gap-3">
                 <Mail className="h-5 w-5 text-accent flex-shrink-0" />
-                <span className="text-background/70">info@hernandeztapiceria.com</span>
+                <span className="text-background/70">info@hernandeztapiceria.shop</span>
               </li> */}
             </ul>
           </div>

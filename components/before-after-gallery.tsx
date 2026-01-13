@@ -145,7 +145,7 @@ export function BeforeAfterGallery() {
                   <p className="text-muted-foreground mt-2">{selectedProject.description}</p>
                   <Button asChild className="mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
                     <a
-                      href={`https://wa.me/573001234567?text=Hola,%20me%20interesa%20un%20trabajo%20similar%20a:%20${encodeURIComponent(selectedProject.title)}`}
+                      href={`https://wa.me/573024511837?text=Hola,%20me%20interesa%20un%20trabajo%20similar%20a:%20${encodeURIComponent(selectedProject.title)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -167,7 +167,7 @@ export function BeforeAfterGallery() {
         <div className="text-center mt-12">
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
             <a
-              href="https://wa.me/573001234567?text=Hola,%20vi%20sus%20trabajos%20y%20me%20gustaría%20cotizar%20un%20proyecto"
+              href="https://wa.me/573024511837?text=Hola,%20vi%20sus%20trabajos%20y%20me%20gustaría%20cotizar%20un%20proyecto"
               target="_blank"
               rel="noopener noreferrer"
             >

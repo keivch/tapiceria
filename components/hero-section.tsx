@@ -25,7 +25,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8">
                 <a
-                  href="https://wa.me/573001234567?text=Hola,%20me%20gustaría%20cotizar%20un%20trabajo%20de%20tapicería"
+                  href="https://wa.me/573024511837?text=Hola,%20me%20gustaría%20cotizar%20un%20trabajo%20de%20tapicería"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
