@@ -61,7 +61,7 @@ export function TestimonialsSection() {
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full overflow-hidden">
                     <Image
-                      src={testimonial.avatar || "/placeholder.svg"}
+                      src={"/placeholder.svg"}
                       alt={testimonial.name}
                       width={56}
                       height={56}
