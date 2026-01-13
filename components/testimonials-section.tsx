@@ -1,6 +1,5 @@
 import { Star, Quote } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
-import Image from "next/image"
 
 const testimonials = [
   {
@@ -8,28 +7,32 @@ const testimonials = [
     location: "Palmira, Valle del Cauca",
     rating: 5,
     text: "Increíble trabajo con mi sofá de 3 puestos. Quedó como nuevo y el servicio fue excelente. Muy recomendados para cualquier trabajo de tapicería en Palmira.",
-    avatar: "/placeholder.svg?height=60&width=60",
+    initial: "ML",
+    bgColor: "bg-primary",
   },
   {
     name: "Andrés Mejía",
     location: "Cali, Valle del Cauca",
     rating: 5,
     text: "Llevé las sillas de comedor de mi abuela que estaban muy deterioradas. El resultado superó todas mis expectativas. Excelente calidad y precio justo.",
-    avatar: "/placeholder.svg?height=60&width=60",
+    initial: "AM",
+    bgColor: "bg-accent",
   },
   {
     name: "Laura Martínez",
     location: "Palmira, Valle del Cauca",
     rating: 5,
     text: "La atención por WhatsApp fue muy rápida y profesional. Vinieron a recoger mis muebles y me los entregaron restaurados en tiempo récord. ¡Feliz!",
-    avatar: "/placeholder.svg?height=60&width=60",
+    initial: "LM",
+    bgColor: "bg-primary/80",
   },
   {
     name: "Roberto Sánchez",
     location: "Pradera, Valle del Cauca",
     rating: 5,
     text: "Excelente trabajo en el interior de mi camioneta. Los asientos quedaron espectaculares. Sin duda los mejores tapiceros de la región.",
-    avatar: "/placeholder.svg?height=60&width=60",
+    initial: "RS",
+    bgColor: "bg-accent/80",
   },
 ]
 
@@ -59,14 +62,10 @@ export function TestimonialsSection() {
                 </div>
                 <p className="text-foreground leading-relaxed mb-6">{testimonial.text}</p>
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-full overflow-hidden">
-                    <Image
-                      src={"/placeholder.svg"}
-                      alt={testimonial.name}
-                      width={56}
-                      height={56}
-                      className="object-cover"
-                    />
+                  <div
+                    className={`w-14 h-14 rounded-full ${testimonial.bgColor} flex items-center justify-center text-background font-semibold text-sm`}
+                  >
+                    {testimonial.initial}
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">{testimonial.name}</p>

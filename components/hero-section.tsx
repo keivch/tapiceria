@@ -40,15 +40,17 @@ export function HeroSection() {
 
             <div className="flex items-center gap-6 pt-4">
               <div className="flex -space-x-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-10 h-10 rounded-full border-2 border-background bg-muted overflow-hidden">
-                    <Image
-                      src={`/satisfied-customer-portrait-.jpg?height=40&width=40&query=satisfied customer portrait ${i}`}
-                      alt="Cliente satisfecho"
-                      width={40}
-                      height={40}
-                      className="object-cover"
-                    />
+                {[
+                  { bg: "bg-primary", initial: "M" },
+                  { bg: "bg-accent", initial: "A" },
+                  { bg: "bg-primary/80", initial: "L" },
+                  { bg: "bg-accent/80", initial: "R" },
+                ].map((avatar, i) => (
+                  <div
+                    key={i}
+                    className={`w-10 h-10 rounded-full border-2 border-background ${avatar.bg} flex items-center justify-center text-background font-semibold text-sm`}
+                  >
+                    {avatar.initial}
                   </div>
                 ))}
               </div>

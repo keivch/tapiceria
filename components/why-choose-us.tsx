@@ -24,14 +24,7 @@ export function WhyChooseUs() {
                 className="object-cover"
               />
             </div>
-            <div className="absolute -bottom-8 -right-8 w-48 h-48 rounded-xl overflow-hidden shadow-xl hidden md:block">
-              <Image
-                src="/placeholder.svg?height=200&width=200"
-                alt="Muestras de telas"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <div className="absolute -bottom-8 -right-8 w-48 h-48 rounded-xl overflow-hidden shadow-xl hidden md:block bg-gradient-to-br from-primary/20 to-accent/20 border-2 border-background" />
             <div className="absolute -top-4 -left-4 bg-accent text-accent-foreground p-6 rounded-xl shadow-lg">
               <span className="text-4xl font-bold font-serif">20+</span>
               <p className="text-sm mt-1">Años de experiencia</p>
@@ -67,14 +60,8 @@ export function WhyChooseUs() {
                 }
               </p>
               <div className="flex items-center gap-4 mt-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=48&width=48"
-                    alt="Oscar Hernández"
-                    width={48}
-                    height={48}
-                    className="object-cover"
-                  />
+                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-background font-bold text-lg">
+                  OH
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Oscar Hernández</p>
